@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function mostrarNome(){
+            console.log('Ramon de Holanda');
+        }
+        mostrarNome();
+
+        var mostrarDia = function(){
+            console.log('Quarta Feira');
+        }
+        mostrarDia();
+
+        var mostrarAno =() => {
+            console.log('2025');
+        }
+        mostrarAno();
+
+        var soma = (a, b) => {
+         return a + b;            
+        }
+        var resultado = soma(15,5);
+
+        console.log(resultado);
+    
+    var pessoa = {
+        nome: 'Ramon',
+        idade: 18 
+        }
+    var mudaNome = (objetoPessoa) =>{
+        objetoPessoa.nome = 'lucas';
+        objetoPessoa.municipio ='serra'
+
+    }
+    
+    mudaNome(pessoa);
+
+    console.log(pessoa);
+
+    
+    </script>
+</body>
+
+</html>

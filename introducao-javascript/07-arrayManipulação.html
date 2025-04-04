@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var frutas = ['maça','pera','uva'];
+        document.write(frutas);
+        document.write('frutas');
+        //push acrescenta ao final do array
+        frutas.push('manga');
+        document.write(frutas);
+        document.write('<br/>');
+        //remove o ultimo elemento 
+        frutas.pop()
+        document.write(frutas);
+        document.write('<br/>');
+        //unshift acrescenta ao inicio do array um elemento 
+        frutas.shift('manga');
+        document.write(frutas);
+        document.write('<br/>');
+        //remove o primeiro elemento
+        frutas.shift();
+        document.write(frutas);
+        document.write('<br/>');
+        //remove elementos a partir do indice 
+        frutas.splice(1,1)
+        document.write(frutas);     
+    </script>
+</body>
+</html>

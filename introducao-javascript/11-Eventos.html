@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+       <script>
+        var calcularImc = () => {
+            var altura = parseFloat(document.getElementById('altura').value);
+            var peso = parseFloat(document.getElementById('peso').value);
+            var resultado = document.getElementById('resultado');
+
+            if (isNaN(altura) || isNaN(peso) || altura <= 0 || peso <= 0) {
+                resultado.innerHTML = 'Por favor, insira valores válidos.';
+                return;
+            }
+            var imc = peso / (altura * altura);
+            resultado.textContent = 'Seu IMC é: ' + imc.toFixed(2);
+        }
+     </script>
+    </head>
+
+    <body>
+        <h1>IMC</h1>
+        <label for="altura">Altura (m)</label>
+        <input id="altura" type="text" placeholder="Ex: 1.75">
+        <label for="peso">Peso(kg)</label>
+        <input id="peso" type="text" placeholder="Ex: 70">
+        <button onclick="calcularImc()">Calcular</button>
+        <p id="resultado"></p>
+    </body>
+
+</html>

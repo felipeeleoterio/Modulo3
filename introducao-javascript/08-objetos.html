@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos Javascript</title>
+</head>
+<body>
+    <script>
+        var pessoa ={};
+        pessoa.nome = "ramon";
+        console.log(pessoa);
+        console.log(JSON.stringify(pessoa));
+
+        var obj = {};
+
+        obj["model"] = 'modelo';
+        obj['name'] = 'name';
+        obj.start = function(){
+            console.log('Estou pronto!!!');
+        }
+
+        console.log(obj);
+        console.log(JSON.stringify(obj));
+        obj.start();
+
+    </script>
+</body>
+</html>
