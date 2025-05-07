@@ -4,10 +4,9 @@ import Forms from "../components/Forms";
 const Cadastro = () => {
   return (
     <div>
-       <Forms /> 
-
+       <Forms />
     </div>
   );
 };
 
-export default Cadastro;
+export default Cadastro

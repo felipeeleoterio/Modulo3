@@ -1,9 +1,12 @@
 import React from 'react'
+import FormsLog from "../components/FormsLog";
 
 const Login = () => {
   return (
-    <div>Login</div>
-  )
-}
+    <div>
+      <FormsLog/>
+    </div>
+  );
+};
 
-export default Login
+export default Login;
